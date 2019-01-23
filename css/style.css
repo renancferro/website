@@ -1,0 +1,446 @@
+﻿.menu{
+		position: fixed;
+		background-color: #1B212F;
+		height: 50px;
+}
+
+.btn{
+		margin-top: 5px;
+		margin-left: 2px;
+		float: right;
+}
+
+ul{
+		float: left;
+		margin-top: 12px;
+		margin-left: -30px;
+}
+
+li {
+		list-style: none;
+		display: inline-block;
+}
+
+li a{
+		text-decoration: none;
+		background-color: #1B212F;
+		margin-bottom: 1px;
+		padding: 5px 15px;
+		color: white;
+		margin-left: -4px;		
+}
+li a:hover{
+		background-color: #627C9A;
+		color: white;
+		border-radius: 10px;
+}
+
+label{
+	display: none;
+	font-size: 25px;
+	margin-top: 3px;
+	color: white;
+}
+#toogle{
+	display: none;
+}
+
+.banner{
+	position: static;
+	background-color: #F3F1F3;
+	height: 500px;
+	color: black;
+	font-family: paytone-one, sans-serif;
+	width: 100px;
+}
+.tIndice{
+	text-align: center;
+	margin-top: 60px; 
+}
+.pIndice{
+	margin-top: 40px;
+}
+
+
+.quem{
+	position: static;
+	height: 630px;
+	background-color: #1B1B22;
+}
+	
+.cardD{
+	position: static;
+	width: 400px;
+	height: 150px;
+	background: #3A4F90;
+	transition: transform .2s;
+}
+.cardD:hover{
+	transform: scale(1.3); 
+	background-color: #2A43A3;
+}
+.ccE{
+	position: static;
+	width: 400px;
+	height: 150px;
+	background: #3A4F90;
+	float: left;
+	transition: transform .2s;
+}
+.ccE:hover{
+	transform: scale(1.3); 
+	background-color: #2A43A3;
+}
+
+.ccD{
+	position: static;
+	width: 400px;
+	height: 150px;
+	background: #3A4F90;
+	float: right;
+	transition: transform .2s;
+}
+.ccD:hover{
+	transform: scale(1.3); 
+	background-color: #2A43A3;
+}
+
+.about{
+	position: static;
+	margin-top: 15px;
+	font-family: allan, sans-serif;
+	font-size: 50px;
+	color: white;
+}
+
+.help{
+	position: static;
+	height: 650px;
+	background-color: #ECEEEE;
+}
+.helpForm{
+	position: static;
+	height: 650px;
+	background-color: #ECEEEE;
+	border-left: 2px solid black;
+}
+
+.formSt{
+	text-align: center;
+	margin-top: 150px;
+}
+.formTxt{
+	margin-bottom: 20px;
+}
+.msg{
+	width: 600px;
+	height: 150px;
+	position: center;
+	resize: none;
+}
+.btnEnviar{
+	float: left;
+	margin-top: 19px;
+}
+.btnEnviar:hover{
+	background-color: #0F1558;
+	border-color: #0F1558;
+}
+
+.contact{
+	margin-top: 150px;
+	font-family: abril-fatface, serif;
+	font-size: 50px;
+	color: #262A2D;
+	text-align: center;
+}
+.descricao{
+	font-size: 20px;
+	text-align: center;
+	color: #301E17;
+	font-family: andika, sans-serif;
+}
+.contactSocial{
+	font-family: abril-fatface, serif;
+	font-size: 50px;
+	color: #262A2D;
+	text-align: center;
+}
+.imgSocial{
+	width: 90px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.rodape{
+	height: 250px;
+	background-color: #12151F;
+}
+.devices{
+	margin-top: 60px;
+}
+.direitos{
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media (max-width: 575.98px){
+		ul{
+			display: none;
+		}
+		
+		label{
+			display: block;
+			cursor: pointer;
+		}
+		
+		.menuC{
+			background-color: #262A2D;
+			position: relative;
+			text-align: center;
+			width: 100%;
+			display: none;
+			font-size: 20px;
+			
+		}
+		.menuC a{
+			display: block;
+			color: white;
+		}
+		#toogle:checked + .menuC{
+			display: block;
+		}
+		
+		.formSt{
+			display: none;
+		}
+		
+		.quem{
+			height: 1200px;
+		}
+	
+		.banner{
+			width: 100%;
+		}
+		.cardD{
+			width: 100%;
+			height: 150px;
+			background: #3A4F90;
+		}
+		.ccE{
+			width: 100%;
+			height: 150px;
+			background: #3A4F90;
+			margin-left: -2px;
+		}
+		.ccD{
+			width: 100%;
+			height: 150px;
+			background: #3A4F90;
+		}
+		.helpForm{
+			display: none;
+		}
+		.help{
+			height: 520px;
+		}
+		.contact{
+			margin-top: 60px;
+			font-size: 25px;
+		}
+		.contactSocial{
+			font-size: 25px;
+		}
+		.imgSocial{
+			width: 50px;
+		}
+}	
+
+@media (min-width: 576px) and (max-width: 781px) { 
+		.quem{
+			height: 1050px;
+		}
+		
+		.cardD{
+			width: 100%;
+			height: 135px;
+			background: #3A4F90;
+			margin-left: 2px;
+		}
+		.ccE{
+			width: 100%;
+			height: 135px;
+			float: right;
+			background: #3A4F90;
+			margin-left: -2px;
+		}
+		.ccD{
+			width: 100%;
+			height: 135px;
+			background: #3A4F90;
+		}
+		
+		.help{
+			height: 520px;
+		}
+		.helpForm{
+			height: 520px;
+		}
+		
+		.formTxt{
+			width: 100%;
+		}
+		.msg{
+			width: 100%;
+		}
+		
+		.formSt{
+			margin-top: 80px;
+		}
+		.contact{
+			margin-top: 70px;
+			font-size: 30px;
+		}
+		.contactSocial{
+			font-size: 30px;
+		}
+		
+		.imgSocial{
+			width: 50px;
+		}
+}
+
+@media (min-width: 782px) and (max-width: 991.98px) {
+		.quem{
+			height: 500px;
+		}
+		
+		.cardD{
+			width: 49%;
+			float: left;
+			height: 150px;
+			background: #3A4F90;
+			margin-left: 2px;
+		}
+		.ccE{
+			width: 24%;
+			height: 175px;
+			float: left;
+			background: #3A4F90;
+			margin-right: 7px;
+		}
+		.ccD{
+			width: 24%;
+			float: left;
+			height: 175px;
+			background: #3A4F90;
+		
+		}
+		.help{
+			height: 520px;
+		}
+		.helpForm{
+			height: 520px;
+		}
+		
+		.formTxt{
+			width: 100%;
+		}
+		.msg{
+			width: 100%;
+		}
+		.formSt{
+			margin-top: 80px;
+		}
+		.contact{
+			margin-top: 70px;
+			font-size: 30px;
+		}
+		.contactSocial{
+			font-size: 30px;
+		}
+		
+		.imgSocial{
+			width: 50px;
+		}
+	
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+		.quem{
+			height: 500px;
+		}
+		
+		.cardD{
+			width: 49%;
+			float: left;
+			height: 150px;
+			background: #3A4F90;
+			margin-left: 2px;
+		}
+		.ccE{
+			width: 24%;
+			height: 175px;
+			float: left;
+			background: #3A4F90;
+			margin-right: 4px;
+		}
+		.ccD{
+			width: 24%;
+			float: right;
+			height: 175px;
+			background: #3A4F90;
+			margin-right: 7px;
+		}
+		.help{
+			height: 520px;
+		}
+		.helpForm{
+			height: 520px;
+		}
+		
+		.formTxt{
+			width: 100%;
+		}
+		.msg{
+			width: 100%;
+		}
+		.formSt{
+			margin-top: 80px;
+		}
+		.contact{
+			margin-top: 70px;
+			font-size: 30px;
+		}
+		.contactSocial{
+			font-size: 30px;
+		}
+		
+		.imgSocial{
+			width: 50px;
+		}
+}
+
+@media (min-width: 1200px) { 
+		.ccE{
+			width: 24%;
+			height: 175px;
+			float: left;
+			background: #3A4F90;
+			margin-right: 7px;
+		}
+		.ccD{
+			width: 24%;
+			float: right;
+			height: 175px;
+			background: #3A4F90;
+			margin-right: 7px;
+		}
+		.formTxt{
+			width: 100%;
+		}
+		.msg{
+			width: 100%;
+		}
+}
