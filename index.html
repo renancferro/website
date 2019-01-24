@@ -124,7 +124,7 @@
 								<input class="formTxt" type="text" id="email" name="email" size="80" max-length="80" placeholder="Informe seu e-mail"><br />
 								<center><textarea class="msg" cols="15" rows="10" name="mensagem" placeholder="Digite sua mensagem..."></textarea></center>
 								
-								<center><input class="btn btn-primary btnEnviar" type="button" value="Enviar"></center>
+								<center><input class="btn btn-primary btnEnviar" type="button" value="Enviar" onclick="alerta()"></center>
 								
 							</form>
 							
@@ -157,11 +157,11 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
 		
-		<script>
-			function mostrar(){
-				window.open("https://www.google.com/");
-			}
-		
+		<script>	
+						function alerta(){
+								alert("Sinto Muito, o site esta em reforma ! Entre em contato pelas redes sociais ! ");
+								$('.btnEnviar').hide();
+						}
 		</script>
 		
 </body>
