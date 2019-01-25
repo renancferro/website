@@ -257,7 +257,7 @@ label{
 		}
 }	
 
-@media (min-width: 576px) and (max-width: 781px) { 
+@media  (min-width: 768px) { 
 		.quem{
 			height: 1050px;
 		}
@@ -312,7 +312,7 @@ label{
 		}
 }
 
-@media (min-width: 782px) and (max-width: 991.98px) {
+@media (min-width: 992px) {
 		.quem{
 			height: 500px;
 		}
@@ -368,7 +368,7 @@ label{
 	
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+@media (min-width: 1200px) { 
 		.quem{
 			height: 500px;
 		}
