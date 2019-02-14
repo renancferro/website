@@ -5,14 +5,15 @@
 			<title>Seja Bem Vindo !</title>
 			<link rel="stylesheet" href="css/bootstrap.min.css" />
 			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
 		<div class="container-fluid">
-			</nav>
+			<nav>
 				<div class="row">
-						<div class="menu col-md-12 col-sm-12 col-xs-12">
-							<ul>
+						<div class="menu col-md-12 col-sm-12 col-xs-12" id="menu">
+							<ul id="list">
 								<li><a href="#topo">Início</a></li>
 								<li><a href="#sobre">Sobre</a></li>
 								<li><a href="#contato">Contato</a></li>
@@ -32,68 +33,73 @@
 		
 		<div class="container-fluid">
 			<header>
-				<div class="row" id="topo">
-					<div class="banner col-md-12 col-sm-12 col-xs-12">
-						<h4 class="tIndice">Seja <br />Bem Vindo (a) !</h4>
-						<center><img src="imagens/ind.png" class="img-fluid pIndice"></center>				
+				<div class="row">
+					<div class="banner img-fluid col-md-12 col-sm-12 col-xs-12">
+						
 					</div>
 				</div>
 			</header>
 		</div>
 		
+		
 		<div class="container-fluid">
 			<section>
 				<div class="row" id="sobre">
 					<div class="quem col-md-12 col-sm-12 col-xs-12">
-						
 						<center>
 							<h1 class="about">Um pouco sobre mim ...</h1>
+							
 							<br />
-							<div class="card cardD text-white mb-3">
-									<div class="card-header">Graduação</div>
+							<div class="card cardCen text-white mb-3">
 										<div class="card-body">
-												<h6 class="card-title">Bacharelado em Sistemas de Informação</h6>
+												<img src="imagens/grad.png" class="icon">
+												<h6 class="card-title"><b>Bacharelado em Sistemas de Informação</h6></b>
 												<p class="card-text">UEMG - Universidade do Estado de Minas Gerais</p>
 										</div>
 							</div>
-							<div class="card cardD text-white mb-3">
-									<div class="card-header">Certificações</div>
+							
+							
+							<div class="card cardCen text-white mb-3">
 										<div class="card-body">
+												<img src="imagens/certificate.png" class="icon">
 												<h6 class="card-title">CSM - Scrum Master</h6>
 												<p class="card-text">SCRUM Alliance.</p>
 										</div>
 							</div>
 								
-							<div class="card ccE text-white mb-3 ccE">
-									<div class="card-header">Cursos Complementares</div>
+							<div class="card cardE text-white mb-3">
 										<div class="card-body">
-												<h6 class="card-title">Treinamento CSM</h6>
+												<img src="imagens/networking.png" class="icon">
+												<h6 class="card-title"><b>Treinamento CSM</h6></b>
 												<p class="card-text">Massimus.</p>
 										</div>
 							</div>
-							<div class="card ccE text-white mb-3 ccE">
-									<div class="card-header">Cursos Complementares</div>
+							<div class="card cardE text-white mb-3 cardE">
 										<div class="card-body">
-												<h6 class="card-title">WEB 2.O + Projetos</h6>
+												<img src="imagens/html.png" class="icon"><img src="imagens/css.png" class="icon">
+												
+												<h6 class="card-title"><b>WEB 2.O + Projetos</h6></b>
 												<p class="card-text">UDEMY Online.</p>
 										</div>
 							</div>
 							
-							<div class="card ccD text-white mb-3 ccD">
-									<div class="card-header">Cursos Complementares</div>
+							<div class="card cardD text-white mb-3">
 										<div class="card-body">
-												<h6 class="card-title">WEB Mordeno com JavaScript</h6>
+												<img src="imagens/js.png" class="icon">
+												<h6 class="card-title"><b>WEB Mordeno com JavaScript</h6></b>
 												<p class="card-text">UDEMY Online.</p>
 										</div>
 							</div>
-							<div class="card ccD text-white mb-3 ccD">
-									<div class="card-header">Cursos Complementares</div>
+							<div class="card cardD text-white mb-3">
 										<div class="card-body">
-												<h6 class="card-title">Técnico em Informática</h6>
+												<img src="imagens/tecnic.png" class="icon">
+												<h6 class="card-title"><b>Técnico em Informática</h6></b>
 												<p class="card-text">ETEC Philladelpho</p>
 										</div>
 							</div>
-						</center>	
+							
+
+						</center>
 					</div>
 					
 				</div>
@@ -112,7 +118,7 @@
 								<p class="descricao">Entre em contato pelo LinkeDin ou por e-mail.</p>
 								<center>
 								<a href="https://www.linkedin.com/in/renan-ferro-41ab73b5/"><img src="imagens/linkdin.png" class="imgSocial"></a>
-								<img src="imagens/gmail.png" class="imgSocial" href="www.google.com.br">
+								<img src="imagens/gmail.png" class="imgSocial" href="www.google.com.br" onclick=mEmail()>
 								</center>
 					</div>
 					
@@ -150,17 +156,55 @@
 		<script src="https://use.edgefonts.net/allan.js"></script>
 		<script src="https://use.edgefonts.net/abril-fatface.js"></script>
 		<script src="https://use.edgefonts.net/andika.js"></script>
+		<script src="https://use.edgefonts.net/didact-gothic.js"></script>
+		<script src="https://use.edgefonts.net/londrina-shadow.js"></script>
+		<script src="https://use.edgefonts.net/sirin-stencil:n4.js"></script>
 		<script src="js/jquery-3.3.1.slim.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
 		
 		<script>	
-						function alerta(){
-								alert("Estamos em manutenção. Entre em contato pelas redes sociais, Muito obrigado !");
-								$('.btnEnviar').hide();
-						}
+			function alerta(){
+				alert("Estamos em manutenção. Entre em contato pelas redes sociais, Muito obrigado !");
+				$('.btnEnviar').hide();
+			}
+						
 		</script>
+		<script>
+			jQuery(function () {
+ 				jQuery(window).scroll(function () {
+   					if (jQuery(this).scrollTop() > 20) {
+					 	$("#menu").addClass("corMenu");
+   					} else {
+						$("#menu").removeClass("corMenu");
+   					}
+ 				});
+			});
+		</script>
+		<script>
+			window.onload = function(){
+				$("#list").hide("ul");
+			}
+		</script>
+		<script>
+			jQuery(function () {
+				jQuery(window).scroll(function () {
+					if (jQuery(this).scrollTop() > 20) {
+						$("#list").show("ul");
+					} else {
+						$("#list").hide("ul");
+					}
+				});
+			});
+		</script>
+		<script>
+			function mEmail(){
+				alert("Meu email é: ferrorenan.uemg@gmail.com");
+			}
+		</script>
+
+		
 		
 </body>
 </html>

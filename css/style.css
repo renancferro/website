@@ -1,7 +1,11 @@
 ﻿.menu{
 		position: fixed;
-		background-color: #1B212F;
 		height: 50px;
+}
+
+.corMenu{
+	background-color: #16161C;
+	opacity: 0.9;
 }
 
 .btn{
@@ -23,14 +27,14 @@ li {
 
 li a{
 		text-decoration: none;
-		background-color: #1B212F;
+		background-color: #16161C;
 		margin-bottom: 1px;
 		padding: 5px 15px;
 		color: white;
 		margin-left: -4px;		
 }
 li a:hover{
-		background-color: #627C9A;
+		background-color: #FF777A;
 		color: white;
 		border-radius: 10px;
 }
@@ -38,8 +42,7 @@ li a:hover{
 label{
 	display: none;
 	font-size: 25px;
-	margin-top: 3px;
-	color: white;
+	margin-top: 3px;	
 }
 #toogle{
 	display: none;
@@ -47,84 +50,96 @@ label{
 
 .banner{
 	position: static;
-	background-color: #F3F1F3;
-	height: 500px;
-	color: black;
-	font-family: paytone-one, sans-serif;
-	width: 100px;
+	background-image: url("../imagens/bacNave.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 870px;
 }
-.tIndice{
-	text-align: center;
-	margin-top: 60px; 
-}
-.pIndice{
-	margin-top: 40px;
-}
-
 
 .quem{
 	position: static;
-	height: 630px;
+	height: 800px;
 	background-color: #1B1B22;
 }
-	
-.cardD{
+.icon{
+	width: 70px;
+}
+.card-text{
+	text-align: center;
+}
+.card-title{
+	color: #FF777A;
+	margin-top: 10px;
+}
+
+.cardCen{
 	position: static;
 	width: 400px;
-	height: 150px;
-	background: #3A4F90;
+	height: 180px;
+	border: 2px solid #6F56A1;
+	margin-right: 2px;
+	text-align: center;
+	background: #1B1B22;
+	transition: transform .5s;
+}
+.cardCen:hover{
+	transform: scale(1.1); 
+	background-color: #121217;
+	border: 2px #ECB765 solid;
+}
+
+.cardE{
+	position: static;
+	width: 24%;
+	height: 170px;
+	border: 2px solid #6F56A1;
+	margin-right: 2px;
+	float: left;
+	text-align: center;
+	background: #1B1B22;
+	transition: transform .5s;
+}
+.cardE:hover{
+	transform: scale(1.1); 
+	background-color: #121217;
+	border: 2px #ECB765 solid;
+}
+
+.cardD{
+	position: static;
+	width: 24%;
+	height: 170px;
+	border: 2px solid #6F56A1;
+	margin-left: 2px;
+	float: right;
+	text-align: center;
+	background: #1B1B22;
 	transition: transform .5s;
 }
 .cardD:hover{
 	transform: scale(1.1); 
-	background-color: #2A43A3;
-	border: 2px beige solid;
-}
-.ccE{
-	position: static;
-	width: 400px;
-	height: 150px;
-	background: #3A4F90;
-	float: left;
-	transition: transform .5s;
-}
-.ccE:hover{
-	transform: scale(1.1); 
-	background-color: #2A43A3;
-	border: 1px beige solid;
-}
-
-.ccD{
-	position: static;
-	width: 400px;
-	height: 150px;
-	background: #3A4F90;
-	float: right;
-	transition: transform .5s;
-}
-.ccD:hover{
-	transform: scale(1.1); 
-	background-color: #2A43A3;
-	border: 2px beige solid;
+	background-color: #121217;
+	border: 2px #ECB765 solid;
 }
 
 .about{
 	position: static;
 	margin-top: 15px;
-	font-family: allan, sans-serif;
+	font-family: sirin-stencil, sans-serif;
 	font-size: 50px;
-	color: white;
+	color: rgb(9, 226, 241);
 }
 
 .help{
 	position: static;
 	height: 650px;
-	background-color: #ECEEEE;
+	background-color: #16161C;
 }
 .helpForm{
 	position: static;
 	height: 650px;
-	background-color: #ECEEEE;
+	background-color: #16161C;
 	border-left: 2px solid black;
 }
 
@@ -154,30 +169,31 @@ label{
 	margin-top: 150px;
 	font-family: abril-fatface, serif;
 	font-size: 50px;
-	color: #262A2D;
+	color: white;
 	text-align: center;
 }
 .descricao{
 	font-size: 20px;
 	text-align: center;
-	color: #301E17;
+	color: #FF777A;
 	font-family: andika, sans-serif;
 }
 .contactSocial{
 	font-family: abril-fatface, serif;
 	font-size: 50px;
-	color: #262A2D;
+	color: white;
 	text-align: center;
 }
 .imgSocial{
 	width: 90px;
 	margin-top: 20px;
 	margin-left: 20px;
+	cursor: pointer;
 }
 
 .rodape{
 	height: 250px;
-	background-color: #12151F;
+	background-color: #1B1B22;
 }
 .devices{
 	margin-top: 60px;
@@ -186,171 +202,183 @@ label{
 	color: white;
 	text-align: center;
 	margin-top: 10px;
+	font-family: didact-gothic, sans-serif;
 }
 
 @media (max-width: 575.98px){
-		ul{
-			display: none;
-		}
-		
-		label{
-			display: block;
-			cursor: pointer;
-		}
-		
-		.menuC{
-			background-color: #262A2D;
-			position: relative;
-			text-align: center;
-			width: 100%;
-			display: none;
-			font-size: 20px;
-			
-		}
-		.menuC a{
-			display: block;
-			color: white;
-		}
-		#toogle:checked + .menuC{
-			display: block;
-		}
-		
-		.formSt{
-			display: none;
-		}
-		
-		.quem{
-			height: 1200px;
-		}
+	ul{
+		display: none;
+	}
 	
-		.banner{
-			width: 100%;
-		}
-		.cardD{
-			width: 100%;
-			height: 150px;
-			background: #3A4F90;
-		}
-		.ccE{
-			width: 100%;
-			height: 150px;
-			background: #3A4F90;
-			margin-left: -2px;
-		}
-		.ccD{
-			width: 100%;
-			height: 150px;
-			background: #3A4F90;
-		}
-		.helpForm{
-			display: none;
-		}
-		.help{
-			height: 520px;
-		}
-		.contact{
-			margin-top: 60px;
-			font-size: 25px;
-		}
-		.contactSocial{
-			font-size: 25px;
-		}
-		.imgSocial{
-			width: 50px;
-		}
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	
+	.card-text{
+		display: none;
+	}
+		
+	.menuC{
+		background-color: #262A2D;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		display: none;
+		font-size: 20px;	
+	}
+	.menuC a{
+		display: block;
+		color: white;
+	}
+	#toogle:checked + .menuC{
+		display: block;
+	}
+	
+	.formSt{
+		display: none;
+	}
+	
+	.quem{
+		height: 1200px;
+	}
+	
+	.banner{
+		width: 100%;
+	}
+	
+	.card{
+		width: 100%;
+		height: 150px;
+		background: #1B1B22;
+	}
+	.cardE{
+		width: 100%;
+		height: 150px;
+		background: #1B1B22;
+		margin-left: -2px;
+	}
+	.cardD{
+		width: 100%;
+		height: 150px;
+		background: #1B1B22;
+	}
+	.helpForm{
+		display: none;
+	}
+	.help{
+		height: 520px;
+	}
+	.contact{
+		margin-top: 60px;
+		font-size: 25px;
+	}
+	.contactSocial{
+		font-size: 25px;
+	}
+	.imgSocial{
+		width: 50px;
+	}
 }	
 
 @media (min-width: 576px) and (max-width: 781px) { 
-		.quem{
-			height: 1050px;
-		}
+	.quem{
+		height: 840px;
+	}
+	
+	.icon{
+		width: 50px;
+	}
+	.cardCen{
+		width: 100%;
+		height: 160px;
+		background: #1B1B22;
+		margin-left: 2px;
+	}
+	.cardE{
+		width: 49%;
+		height: 160px;
+		float: left;
+		background: #1B1B22;
+		margin-right: 5px;
+	}
+	.cardD{
+		width: 49%;
+		height: 160px;
+		background: #1B1B22;
+		float: left;
+		margin-right: 1px;
+	}
 		
-		.cardD{
-			width: 100%;
-			height: 135px;
-			background: #3A4F90;
-			margin-left: 2px;
-		}
-		.ccE{
-			width: 100%;
-			height: 135px;
-			float: right;
-			background: #3A4F90;
-			margin-left: -2px;
-		}
-		.ccD{
-			width: 100%;
-			height: 135px;
-			background: #3A4F90;
-			margin-right: 7px;
-		}
+	.help{
+		height: 520px;
+	}
+	.helpForm{
+		height: 520px;
+	}
 		
-		.help{
-			height: 520px;
-		}
-		.helpForm{
-			height: 520px;
-		}
+	.formTxt{
+		width: 100%;
+	}
+	.msg{
+		width: 100%;
+	}
 		
-		.formTxt{
-			width: 100%;
-		}
-		.msg{
-			width: 100%;
-		}
+	.formSt{
+		margin-top: 80px;
+	}
+	.contact{
+		margin-top: 70px;
+		font-size: 30px;
+	}
+	.contactSocial{
+		font-size: 30px;
+	}
 		
-		.formSt{
-			margin-top: 80px;
-		}
-		.contact{
-			margin-top: 70px;
-			font-size: 30px;
-		}
-		.contactSocial{
-			font-size: 30px;
-		}
-		
-		.imgSocial{
-			width: 50px;
-		}
+	.imgSocial{
+		width: 50px;
+	}
 }
 
 @media (min-width: 782px) and (max-width: 991.98px) {
-		.quem{
-			height: 500px;
-		}
+	.quem{
+		height: 950px;
+	}
 		
-		.cardD{
-			width: 49%;
-			float: left;
-			height: 150px;
-			background: #3A4F90;
-			margin-left: 2px;
-		}
-		.ccE{
-			width: 24%;
-			height: 175px;
-			float: left;
-			background: #3A4F90;
-			margin-right: 7px;
-		}
-		.ccD{
-			width: 24%;
-			float: left;
-			height: 175px;
-			background: #3A4F90;
-			margin-right: 7px;
-		}
-		.help{
-			height: 520px;
-		}
-		.helpForm{
-			height: 520px;
-		}
+	.cardCen{
+		width: 80%;
+		height: 180px;
+		background: #1B1B22;
+	
+	}
+	.cardE{
+		width: 49%;
+		height: 175px;
+		background: #1B1B22;
+		float: left;
+		margin-left: 2px;
+	}
+	.cardD{
+		width: 49%;
+		height: 175px;
+		background: #1B1B22;
+		float: left;
+		margin-left: 2px;
+	}
+	.icon{
+		width: 60px;
+	}
+
+	.help{
+		height: 520px;
+	}
+	.helpForm{
+		height: 520px;
+	}
 		
-		.formTxt{
-			width: 100%;
-		}
+	.formTxt{
+		width: 100%;
+	}
 		.msg{
 			width: 100%;
 		}
@@ -371,7 +399,7 @@ label{
 	
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
+/*@media (min-width: 992px) and (max-width: 1199.98px) { 
 		.quem{
 			height: 500px;
 		}
@@ -448,3 +476,4 @@ label{
 			width: 100%;
 		}
 }
+*/
